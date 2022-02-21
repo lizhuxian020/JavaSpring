@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="userDao" class="cn.zzstc.dao.impl.UserDaoImple" scope="singleton" init-method="init" destroy-method="destroy"/>-->
+<!--    <bean id="userDao" class="cn.zzstc.dao.impl.UserDaoImple">-->
+<!--        <property name="age" value="18"/>-->
+<!--        <property name="name" value="haha"/>-->
+<!--    </bean>-->
+    <bean id="user1" class="cn.zzstc.domain.User">
+        <property name="name" value="qwe"/>
+        <property name="age" value="12"/>
+    </bean>
+    <bean id="userDao" class="cn.zzstc.dao.impl.UserDaoImple">
+        <property name="strList">
+            <list>
+                <value>asd</value>
+                <value>qwe</value>
+            </list>
+        </property>
+        <property name="userMap">
+            <map>
+                <entry key="haha" value-ref="user1"/>
+            </map>
+        </property>
+    </bean>
+<!--    <bean id="userDao" class="cn.zzstc.factory.StaticFactory" factory-method="getUserDao"/>-->
+
+<!--    <bean id="factory" class="cn.zzstc.dynamic.DynamicFactory"/>-->
+<!--    <bean id="userDao" factory-bean="factory" factory-method="getUserDao"/>-->
+
+<!--    <bean id="userService" class="cn.zzstc.service.impl.UserServiceImpl">-->
+<!--        <property name="userDao" ref="userDao"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="userService" class="cn.zzstc.service.impl.UserServiceImpl" p:userDao-ref="userDao"/>-->
+    <bean id="userService" class="cn.zzstc.service.impl.UserServiceImpl">
+        <constructor-arg name="userDao" ref="userDao"/>
+    </bean>
+</beans>
