@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="webApp_Spring_annotation" />
         <module name="webApp2" />
+        <module name="webapp_spring_mvc" />
         <module name="webApp_demo" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="webApp2" target="1.7" />
       <module name="webApp_demo" target="1.7" />
       <module name="webApp_Spring_annotation" target="1.7" />
+      <module name="webapp_spring_mvc" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
