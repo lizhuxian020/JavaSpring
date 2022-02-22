@@ -3,12 +3,14 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/webApp2" />
     <file type="web" url="file://$PROJECT_DIR$/webApp_demo" />
+    <file type="web" url="file://$PROJECT_DIR$/webApp_Spring_annotation" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/webApp_demo/pom.xml" />
         <option value="$PROJECT_DIR$/webApp2/pom.xml" />
+        <option value="$PROJECT_DIR$/webApp_Spring_annotation/pom.xml" />
       </list>
     </option>
   </component>

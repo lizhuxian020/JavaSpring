@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/proj0218.iml" filepath="$PROJECT_DIR$/.idea/proj0218.iml" />
       <module fileurl="file://$PROJECT_DIR$/webApp2/webApp2.iml" filepath="$PROJECT_DIR$/webApp2/webApp2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webApp_Spring_annotation/webApp_Spring_annotation.iml" filepath="$PROJECT_DIR$/webApp_Spring_annotation/webApp_Spring_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/webApp_demo/webApp_demo.iml" filepath="$PROJECT_DIR$/webApp_demo/webApp_demo.iml" />
     </modules>
   </component>
