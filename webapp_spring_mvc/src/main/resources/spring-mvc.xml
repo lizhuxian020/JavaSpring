@@ -7,4 +7,6 @@
     
     <context:component-scan base-package="cn.zzstc.controller"/>
 
+<!--    <bean id="userController" class="cn.zzstc.controller.UserController"/>-->
+
 </beans>
