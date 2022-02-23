@@ -10,8 +10,11 @@ public class ServletListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         System.out.println("服务器启动，servletContext初始化");
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         ServletContext servletContext = servletContextEvent.getServletContext();
+
+        String springContextFileName = servletContext.getInitParameter("SpringContextFileName");
+
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(springContextFileName);
         servletContext.setAttribute("app", applicationContext);
     }
 
