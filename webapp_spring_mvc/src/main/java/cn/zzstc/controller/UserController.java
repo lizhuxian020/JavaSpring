@@ -11,7 +11,7 @@ public class UserController {
     @RequestMapping(value = "/quick", method = RequestMethod.GET, params = {"username"})
     private String func1() {
         System.out.println("asd");
-        return "/success.jsp";
+        return "/jsp/success.jsp";
     }
 
 }
