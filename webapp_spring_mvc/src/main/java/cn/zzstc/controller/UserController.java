@@ -16,6 +16,12 @@ import java.io.IOException;
 @RequestMapping("/user")
 public class UserController {
 
+    @RequestMapping("/quick6")
+    @ResponseBody
+    private void func6(User user) {
+        System.out.println(user);
+    }
+
     @RequestMapping("/quick5")
     @ResponseBody
     private User func5() {
