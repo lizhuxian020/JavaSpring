@@ -3,6 +3,7 @@ package cn.zzstc.controller;
 import cn.zzstc.domain.User;
 //import com.fasterxml.jackson.core.JsonProcessingException;
 //import com.fasterxml.jackson.databind.ObjectMapper;
+import cn.zzstc.domain.VO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +16,12 @@ import java.io.IOException;
 @Controller
 @RequestMapping("/user")
 public class UserController {
+
+    @RequestMapping("/quick7")
+    @ResponseBody
+    private void func7(VO vo) {
+        System.out.println(vo.getUserList());
+    }
 
     @RequestMapping("/quick6")
     @ResponseBody
