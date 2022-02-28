@@ -1,5 +1,8 @@
 package cn.zzstc.controller;
 
+import cn.zzstc.domain.User;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,6 +15,17 @@ import java.io.IOException;
 @Controller
 @RequestMapping("/user")
 public class UserController {
+
+    @RequestMapping("/quick5")
+    @ResponseBody
+    private String func5() throws JsonProcessingException {
+        User user = new User();
+        user.setUsername("lisi");
+        user.setAge(123);
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = objectMapper.writeValueAsString(user);
+        return json;
+    }
 
     @RequestMapping("/quick4")
     @ResponseBody
