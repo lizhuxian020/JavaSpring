@@ -17,6 +17,13 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
 
+    @RequestMapping("/quick12")
+    @ResponseBody
+    private void func12(@RequestHeader(value = "User-Agent") String userAgent, @CookieValue("JSESSIONID") String cookie) {
+        System.out.println(userAgent);
+        System.out.println(cookie);
+    }
+
     @RequestMapping("/quick11/{date}")
     @ResponseBody
     private void func11(@PathVariable("date") Date date) {
