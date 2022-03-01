@@ -10,11 +10,18 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
+
+    @RequestMapping("/quick11/{date}")
+    @ResponseBody
+    private void func11(@PathVariable("date") Date date) {
+        System.out.println(date);
+    }
 
     @RequestMapping("/quick10/{username}")
     @ResponseBody
