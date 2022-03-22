@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/user")
@@ -104,10 +107,18 @@ public class UserController {
         return "success";
     }
 
-    @RequestMapping(value = "/quick", method = RequestMethod.GET)
+    @RequestMapping(value = "/quick2")
+    private ModelAndView func2() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("success");
+        modelAndView.addObject("username", "haha");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/quick", method = RequestMethod.GET, params = {"username"})
     private String func1() {
         System.out.println("asd");
-        return "redirect:/jsp/success.jsp";
+        return "success";
     }
 
 }
