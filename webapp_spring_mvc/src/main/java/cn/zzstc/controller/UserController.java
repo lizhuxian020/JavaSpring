@@ -107,13 +107,13 @@ public class UserController {
         return "success";
     }
 
-    @RequestMapping(value = "/quick2")
-    private ModelAndView func2() {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("success");
-        modelAndView.addObject("username", "haha");
-        return modelAndView;
-    }
+//    @RequestMapping(value = "/quick2")
+//    private ModelAndView func2() {
+//        ModelAndView modelAndView = new ModelAndView();
+//        modelAndView.setViewName("success");
+//        modelAndView.addObject("username", "haha");
+//        return modelAndView;
+//    }
 
     @RequestMapping(value = "/quick", method = RequestMethod.GET, params = {"username"})
     private String func1() {

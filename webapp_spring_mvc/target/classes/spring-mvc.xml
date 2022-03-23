@@ -11,10 +11,10 @@
 
 
 <!--    <bean id="userController" class="cn.zzstc.controller.UserController"/>-->
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="suffix" value=".jsp"></property>
-        <property name="prefix" value="/jsp/"></property>
-    </bean>
+<!--    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+<!--        <property name="suffix" value=".jsp"></property>-->
+<!--        <property name="prefix" value="/jsp/"></property>-->
+<!--    </bean>-->
 
 <!--    <bean id="handlerAdapter" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">-->
 <!--        <property name="messageConverters">-->
@@ -33,4 +33,9 @@
             </list>
         </property>
     </bean>
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
 </beans>
