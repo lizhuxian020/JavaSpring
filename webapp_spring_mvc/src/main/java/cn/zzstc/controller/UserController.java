@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.List;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -22,7 +23,9 @@ public class UserController {
 
     @RequestMapping("/quick13")
     @ResponseBody
-    private void func13() {
+    private void func13(String username, MultipartFile file) {
+        System.out.println(username);
+        System.out.println(file);
     }
 
     @RequestMapping("/quick12")
