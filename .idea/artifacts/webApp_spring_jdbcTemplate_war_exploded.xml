@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="webApp_spring_jdbcTemplate:war exploded">
+    <output-path>$PROJECT_DIR$/webApp_spring/webApp_spring_jdbcTemplate/target/webApp_spring</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>webApp_spring_jdbcTemplate</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webApp_spring_jdbcTemplate" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/webApp_spring/webApp_spring_jdbcTemplate/target/webApp_spring/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="webApp_spring_jdbcTemplate/web/Web" />
+    </root>
+  </artifact>
+</component>

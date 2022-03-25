@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="webApp_spring_jbdcTemplate" />
         <module name="webApp_Spring_annotation" />
         <module name="webApp_itDemo" />
         <module name="webApp2" />
@@ -18,6 +19,8 @@
       <module name="webApp_demo" target="1.7" />
       <module name="webApp_itDemo" target="1.7" />
       <module name="webApp_Spring_annotation" target="1.7" />
+      <module name="webApp_spring_jbdcTemplate" target="1.7" />
+      <module name="webApp_spring_jdbcTemplate" target="1.7" />
       <module name="webapp_spring_mvc" target="1.7" />
     </bytecodeTargetLevel>
   </component>

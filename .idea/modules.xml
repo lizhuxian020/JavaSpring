@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/webApp_Spring_annotation/webApp_Spring_annotation.iml" filepath="$PROJECT_DIR$/webApp_Spring_annotation/webApp_Spring_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/webApp_demo/webApp_demo.iml" filepath="$PROJECT_DIR$/webApp_demo/webApp_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/webApp_itDemo/webApp_itDemo.iml" filepath="$PROJECT_DIR$/webApp_itDemo/webApp_itDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webApp_spring_jbdcTemplate/webApp_spring_jbdcTemplate.iml" filepath="$PROJECT_DIR$/webApp_spring_jbdcTemplate/webApp_spring_jbdcTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/webapp_spring_mvc/webapp_spring_mvc.iml" filepath="$PROJECT_DIR$/webapp_spring_mvc/webapp_spring_mvc.iml" />
     </modules>
   </component>

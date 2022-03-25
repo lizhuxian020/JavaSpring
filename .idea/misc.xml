@@ -4,7 +4,9 @@
     <file type="web" url="file://$PROJECT_DIR$/webApp2" />
     <file type="web" url="file://$PROJECT_DIR$/webApp_demo" />
     <file type="web" url="file://$PROJECT_DIR$/webApp_itDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/webApp_spring/webApp_spring_jdbcTemplate" />
     <file type="web" url="file://$PROJECT_DIR$/webApp_Spring_annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/webApp_spring_jbdcTemplate" />
     <file type="web" url="file://$PROJECT_DIR$/webapp_spring_mvc" />
   </component>
   <component name="MavenProjectsManager">
@@ -15,6 +17,7 @@
         <option value="$PROJECT_DIR$/webApp_Spring_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/webapp_spring_mvc/pom.xml" />
         <option value="$PROJECT_DIR$/webApp_itDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/webApp_spring_jbdcTemplate/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webApp_spring_jdbcTemplate:war">
+    <output-path>$PROJECT_DIR$/webApp_spring/webApp_spring_jdbcTemplate/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>webApp_spring_jdbcTemplate</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="webApp_spring.war">
+      <element id="artifact" artifact-name="webApp_spring_jdbcTemplate:war exploded" />
+    </root>
+  </artifact>
+</component>
