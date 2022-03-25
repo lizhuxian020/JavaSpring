@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
@@ -23,9 +24,14 @@ public class UserController {
 
     @RequestMapping("/quick13")
     @ResponseBody
-    private void func13(String username, MultipartFile file) {
+    private void func13(String username, MultipartFile file) throws IOException {
         System.out.println(username);
         System.out.println(file);
+
+        //文件名称
+        System.out.println( file.getOriginalFilename());
+        String fileName = file.getOriginalFilename();
+        file.transferTo(new File("/Users/zzer/Desktop/" + fileName));
     }
 
     @RequestMapping("/quick12")
