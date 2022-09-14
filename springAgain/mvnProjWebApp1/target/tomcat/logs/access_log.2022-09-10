@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:17:39:23 +0800] "GET /mvnProjWebApp1 HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:17:39:23 +0800] "GET /mvnProjWebApp1/ HTTP/1.1" 200 52 http-bio-8080-exec-3 277
+0:0:0:0:0:0:0:1 - - [10/Sep/2022:17:39:24 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0

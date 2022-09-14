@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mvnProjIDEA1/mvnProjIDEA1.iml" filepath="$PROJECT_DIR$/mvnProjIDEA1/mvnProjIDEA1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvnProjWebApp1/mvnProjWebApp1.iml" filepath="$PROJECT_DIR$/mvnProjWebApp1/mvnProjWebApp1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springAgain.iml" filepath="$PROJECT_DIR$/.idea/springAgain.iml" />
+    </modules>
+  </component>
+</project>
