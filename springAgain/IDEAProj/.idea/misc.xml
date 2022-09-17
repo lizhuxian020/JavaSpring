@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/LZXPractiseSpring" />
     <file type="web" url="file://$PROJECT_DIR$/webApp1" />
     <file type="web" url="file://$PROJECT_DIR$/webapp2" />
   </component>
@@ -10,6 +11,7 @@
         <option value="$PROJECT_DIR$/mvnProj1/pom.xml" />
         <option value="$PROJECT_DIR$/webApp1/pom.xml" />
         <option value="$PROJECT_DIR$/webapp2/pom.xml" />
+        <option value="$PROJECT_DIR$/LZXPractiseSpring/pom.xml" />
       </list>
     </option>
   </component>

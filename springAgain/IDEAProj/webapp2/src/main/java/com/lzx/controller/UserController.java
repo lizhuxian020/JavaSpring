@@ -4,6 +4,7 @@ import com.lzx.domain.User;
 import com.lzx.service.UserService;
 import com.lzx.service.impl.UserServiceImpl;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
@@ -36,8 +37,9 @@ public class UserController {
     }
 
     @RequestMapping("/quick1")
-    public String quick1() {
+    public String quick1(Model model) {
         System.out.println("ahhaha");
+        model.addAttribute("name", "lzx");
         return "success.jsp";
     }
 }

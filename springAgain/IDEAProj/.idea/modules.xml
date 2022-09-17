@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/IDEAProj.iml" filepath="$PROJECT_DIR$/.idea/IDEAProj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LZXPractiseSpring/LZXPractiseSpring.iml" filepath="$PROJECT_DIR$/LZXPractiseSpring/LZXPractiseSpring.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvnProj1/mvnProj1.iml" filepath="$PROJECT_DIR$/mvnProj1/mvnProj1.iml" />
       <module fileurl="file://$PROJECT_DIR$/webApp1/webApp1.iml" filepath="$PROJECT_DIR$/webApp1/webApp1.iml" />
       <module fileurl="file://$PROJECT_DIR$/webapp2/webapp2.iml" filepath="$PROJECT_DIR$/webapp2/webapp2.iml" />

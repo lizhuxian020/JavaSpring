@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="LZXPractiseSpring:war">
+    <output-path>$PROJECT_DIR$/LZXPractiseSpring/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>LZXPractiseSpring</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="LZXPractiseSpring-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="LZXPractiseSpring:war exploded" />
+    </root>
+  </artifact>
+</component>
