@@ -9,6 +9,7 @@ public class User {
     private String email;
     private String password;
     private String phoneNum;
+    private List<Role> roleList;
 
     public List<Role> getRoleList() {
         return roleList;
@@ -17,8 +18,6 @@ public class User {
     public void setRoleList(List<Role> roleList) {
         this.roleList = roleList;
     }
-
-    private List<Role> roleList;
 
     public Long getId() {
         return id;

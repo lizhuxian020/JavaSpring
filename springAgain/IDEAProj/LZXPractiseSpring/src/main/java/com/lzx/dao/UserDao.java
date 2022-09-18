@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface UserDao {
     public List<User> list();
+
+    Long addUser(User user);
+
+    void addRole(Long userId, Long[] roleIds);
 }

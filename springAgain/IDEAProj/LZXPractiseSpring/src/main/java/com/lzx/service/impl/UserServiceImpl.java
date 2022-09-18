@@ -28,4 +28,9 @@ public class UserServiceImpl implements UserService {
         }
         return userList;
     }
+
+    public void addUser(User user, Long[] roleIds) {
+        Long userId = userDao.addUser(user);
+        userDao.addRole(userId, roleIds);
+    }
 }
