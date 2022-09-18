@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="webApp_Spring_annotation.war">
+    <root id="archive" name="webApp_Spring_annotation-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="webApp_Spring_annotation:war exploded" />
     </root>
   </artifact>

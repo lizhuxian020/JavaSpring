@@ -9,12 +9,14 @@
         <module name="LZXPractiseSpring" />
         <module name="webapp2" />
         <module name="mvnProj1" />
+        <module name="TestAnnotation" />
         <module name="webApp1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="LZXPractiseSpring" target="1.7" />
+      <module name="LZXPractiseSpring" target="1.5" />
       <module name="mvnProj1" target="1.7" />
+      <module name="TestAnnotation" target="1.5" />
       <module name="webApp1" target="1.7" />
       <module name="webapp2" target="1.7" />
     </bytecodeTargetLevel>

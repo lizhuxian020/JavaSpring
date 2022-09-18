@@ -13,12 +13,13 @@ public class UserController {
     public static void main(String[] args) throws SQLException {
 //        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
-        UserService userService = context.getBean(UserService.class);
-        userService.save();
+        System.out.println(context);
+//        UserService userService = context.getBean(UserService.class);
+//        userService.save();
 
-        DataSource dataSource = context.getBean(DataSource.class);
-        Connection connection = dataSource.getConnection();
-        System.out.println(connection);
-        connection.close();
+//        DataSource dataSource = context.getBean(DataSource.class);
+//        Connection connection = dataSource.getConnection();
+//        System.out.println(connection);
+//        connection.close();
     }
 }

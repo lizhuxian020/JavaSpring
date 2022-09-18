@@ -12,31 +12,31 @@ import java.beans.PropertyVetoException;
 
 
 @Configuration
-@ComponentScan("cn.zzstc")
+//@ComponentScan("cn.zzstc")
 //<context:property-placeholder location="classpath:props.properties"/>
-@PropertySource("classpath:props.properties")
+//@PropertySource("classpath:props.properties")
 public class SpringConfiguration {
-
-    @Value("${jdbc.driver}")
-    public String driver;
-    @Value("${jdbc.url}")
-    public String url;
-    @Value("${jdbc.user}")
-    public String user;
-    @Value("${jdbc.pwd}")
-    public String pwd;
-
-    @Bean("dataSource")
-    public DataSource getDataSource() throws PropertyVetoException {
-        ComboPooledDataSource dataSource = new ComboPooledDataSource();
-//        dataSource.setDriverClass("com.mysql.jdbc.Driver");
-//        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/users");
-//        dataSource.setUser("root");
-//        dataSource.setPassword("qq123123");
-        dataSource.setDriverClass(driver);
-        dataSource.setJdbcUrl(url);
-        dataSource.setUser(user);
-        dataSource.setPassword(pwd);
-        return dataSource;
-    }
+//
+//    @Value("${jdbc.driver}")
+//    public String driver;
+//    @Value("${jdbc.url}")
+//    public String url;
+//    @Value("${jdbc.user}")
+//    public String user;
+//    @Value("${jdbc.pwd}")
+//    public String pwd;
+//
+//    @Bean("dataSource")
+//    public DataSource getDataSource() throws PropertyVetoException {
+//        ComboPooledDataSource dataSource = new ComboPooledDataSource();
+////        dataSource.setDriverClass("com.mysql.jdbc.Driver");
+////        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/users");
+////        dataSource.setUser("root");
+////        dataSource.setPassword("qq123123");
+//        dataSource.setDriverClass(driver);
+//        dataSource.setJdbcUrl(url);
+//        dataSource.setUser(user);
+//        dataSource.setPassword(pwd);
+//        return dataSource;
+//    }
 }

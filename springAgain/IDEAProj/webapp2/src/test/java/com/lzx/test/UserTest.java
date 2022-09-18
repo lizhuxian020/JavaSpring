@@ -12,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.beans.PropertyVetoException;
+import java.sql.SQLException;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -34,18 +35,18 @@ public class UserTest {
     }
 
     @Test
-    public void test1() throws PropertyVetoException {
+    public void test1() throws PropertyVetoException, SQLException {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         dataSource.setDriverClass("com.mysql.jdbc.Driver");
         dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/lzxdb");
         dataSource.setUser("root");
         dataSource.setPassword("qq123123");
 
+        System.out.println(dataSource.getConnection());
 
-
-        JdbcTemplate template = new JdbcTemplate();
-        template.setDataSource(dataSource);
-        int row = template.update("insert into users(name, money) values (?,?)", "zqyy", 200);
-        System.out.println(row);
+//        JdbcTemplate template = new JdbcTemplate();
+//        template.setDataSource(dataSource);
+//        int row = template.update("insert into users(name, money) values (?,?)", "zqyy", 200);
+//        System.out.println(row);
     }
 }

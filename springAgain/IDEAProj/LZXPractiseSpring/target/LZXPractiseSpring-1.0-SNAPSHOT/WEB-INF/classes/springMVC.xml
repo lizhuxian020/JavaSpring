@@ -11,5 +11,6 @@
 
     <mvc:resources mapping="/plugins/**" location="/plugins/"/>
     <mvc:resources mapping="/img/**" location="/img/"/>
+    <mvc:resources mapping="/css/**" location="/css/"/>
 
 </beans>
