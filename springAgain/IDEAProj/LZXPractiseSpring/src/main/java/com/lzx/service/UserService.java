@@ -8,4 +8,6 @@ public interface UserService {
     public List<User> list();
 
     public void addUser(User user, Long[] roleIds);
+
+    public void deleteUser(String userId);
 }

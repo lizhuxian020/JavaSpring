@@ -6,7 +6,9 @@ import com.lzx.service.RoleService;
 import com.lzx.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -40,6 +42,13 @@ public class UserController {
     @RequestMapping("/addUser")
     public String addUser(User user, Long[] roleIds) {
         userService.addUser(user, roleIds);
+        return "redirect:/user/user_list";
+    }
+
+    @RequestMapping("/deleteUser/{userId}")
+    public String deleteUser(@PathVariable(value = "userId") String userId) {
+        System.out.println("删除用户"+ userId);
+        userService.deleteUser(userId);
         return "redirect:/user/user_list";
     }
 }

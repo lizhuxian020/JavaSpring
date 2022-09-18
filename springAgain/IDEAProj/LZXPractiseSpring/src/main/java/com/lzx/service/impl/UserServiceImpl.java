@@ -33,4 +33,8 @@ public class UserServiceImpl implements UserService {
         Long userId = userDao.addUser(user);
         userDao.addRole(userId, roleIds);
     }
+
+    public void deleteUser(String userId) {
+        userDao.deleteUser(userId);
+    }
 }

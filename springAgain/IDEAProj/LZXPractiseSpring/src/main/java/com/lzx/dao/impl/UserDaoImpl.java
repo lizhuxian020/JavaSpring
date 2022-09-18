@@ -50,4 +50,10 @@ public class UserDaoImpl implements UserDao {
             jdbcTemplate.update("insert into sys_user_role values (?,?)", userId, roleId);
         }
     }
+
+    public void deleteUser(String userId) {
+        jdbcTemplate.update("delete from sys_user_role where userId=?", userId);
+        jdbcTemplate.update("delete from sys_user where id=?", userId);
+
+    }
 }

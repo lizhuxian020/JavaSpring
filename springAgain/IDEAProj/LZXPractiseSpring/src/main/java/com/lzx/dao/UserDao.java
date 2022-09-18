@@ -10,4 +10,7 @@ public interface UserDao {
     Long addUser(User user);
 
     void addRole(Long userId, Long[] roleIds);
+
+    void deleteUser(String userId);
+
 }
