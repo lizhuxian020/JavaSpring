@@ -9,7 +9,6 @@
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
 ">
 
-    <context:property-placeholder location="classpath:jdbc.properties"/>
     <context:component-scan base-package="com.lzx.controller"/>
 
     <mvc:annotation-driven/>
@@ -19,15 +18,9 @@
 <!--    <mvc:resources mapping="/css/**" location="/css/"/>-->
     <mvc:default-servlet-handler/>
 
-    <bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
-
-    <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
-        <property name="driverClass" value="${jdbc.drive}"/>
-        <property name="jdbcUrl" value="${jdbc.url}"/>
-        <property name="user" value="${jdbc.user}"/>
-        <property name="password" value="${jdbc.pwd}"/>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="suffix" value=".jsp"/>
+        <property name="prefix" value="/pages/"/>
     </bean>
 
 </beans>

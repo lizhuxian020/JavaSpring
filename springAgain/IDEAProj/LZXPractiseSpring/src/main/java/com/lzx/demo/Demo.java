@@ -1,6 +1,5 @@
 package com.lzx.demo;
 
-import com.lzx.controller.SpringConfiguration;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -22,13 +21,16 @@ public class Demo {
 //
 //        System.out.println(dataSource.getConnection());
 //        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("springMVC.xml");
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
-        System.out.println(context);
-        ComboPooledDataSource dataSource = (ComboPooledDataSource) context.getBean(DataSource.class);
-        System.out.println(dataSource.getJdbcUrl());
-        System.out.println(dataSource.getDriverClass());
-        System.out.println(dataSource.getUser());
-        System.out.println(dataSource.getPassword());
-        System.out.println(dataSource.getConnection());
+//        ClassPathXmlApplicationContext context1 = new ClassPathXmlApplicationContext("springContext.xml");
+//        JdbcTemplate bean = context.getBean(JdbcTemplate.class);
+//        System.out.println(bean);
+//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
+//        System.out.println(context);
+//        ComboPooledDataSource dataSource = (ComboPooledDataSource) context.getBean(DataSource.class);
+//        System.out.println(dataSource.getJdbcUrl());
+//        System.out.println(dataSource.getDriverClass());
+//        System.out.println(dataSource.getUser());
+//        System.out.println(dataSource.getPassword());
+//        System.out.println(dataSource.getConnection());
     }
 }
