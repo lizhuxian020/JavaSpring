@@ -17,4 +17,9 @@ public class RoleServiceImpl implements RoleService {
     public List<Role> list() {
         return roleDao.list();
     }
+
+    public int addRole(String name, String desc) {
+        int i = roleDao.addRole(name, desc);
+        return i;
+    }
 }
