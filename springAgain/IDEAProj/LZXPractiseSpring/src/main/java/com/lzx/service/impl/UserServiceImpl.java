@@ -37,4 +37,12 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(String userId) {
         userDao.deleteUser(userId);
     }
+
+    public User login(String username, String password) {
+        User user = userDao.getUser(username);
+        if (user != null && user.getPassword().equals(password)) {
+            return user;
+        }
+        return null;
+    }
 }
