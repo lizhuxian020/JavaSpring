@@ -11,6 +11,7 @@
         <module name="SpringAOP" />
         <module name="webapp2" />
         <module name="TestAnnotation" />
+        <module name="SpringMyBatisBase" />
         <module name="webApp1" />
         <module name="mvnProj1" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="LZXPractiseSpring" target="1.5" />
       <module name="mvnProj1" target="1.7" />
       <module name="SpringAOP" target="8" />
+      <module name="SpringMyBatisBase" target="8" />
       <module name="SpringTransaction" target="8" />
       <module name="Spring事务" target="8" />
       <module name="TestAnnotation" target="1.5" />
