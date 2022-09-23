@@ -28,16 +28,18 @@
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 
-    <tx:advice id="transactionInterceptor" transaction-manager="transactionManager">
-        <tx:attributes>
-            <tx:method name="*"/>
-        </tx:attributes>
-    </tx:advice>
+<!--    <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>-->
 
-    <aop:config>
-        <aop:pointcut id="pointCut" expression="execution(* com.lzx.service.impl.*.*(..))"/>
+<!--    <tx:advice id="transactionInterceptor" transaction-manager="transactionManager">-->
+<!--        <tx:attributes>-->
+<!--            <tx:method name="*"/>-->
+<!--        </tx:attributes>-->
+<!--    </tx:advice>-->
+
+<!--    <aop:config>-->
+<!--        <aop:pointcut id="pointCut" expression="execution(* com.lzx.service.impl.*.*(..))"/>-->
 <!--        <aop:advisor advice-ref="transactionInterceptor" pointcut-ref="pointCut"></aop:advisor>-->
-    </aop:config>
+<!--    </aop:config>-->
 
 
 </beans>
