@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/IDEAProj.iml" filepath="$PROJECT_DIR$/.idea/IDEAProj.iml" />
       <module fileurl="file://$PROJECT_DIR$/LZXPractiseSpring/LZXPractiseSpring.iml" filepath="$PROJECT_DIR$/LZXPractiseSpring/LZXPractiseSpring.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringAOP/SpringAOP.iml" filepath="$PROJECT_DIR$/SpringAOP/SpringAOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringTransaction/SpringTransaction.iml" filepath="$PROJECT_DIR$/SpringTransaction/SpringTransaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestAnnotation/TestAnnotation.iml" filepath="$PROJECT_DIR$/TestAnnotation/TestAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvnProj1/mvnProj1.iml" filepath="$PROJECT_DIR$/mvnProj1/mvnProj1.iml" />
       <module fileurl="file://$PROJECT_DIR$/webApp1/webApp1.iml" filepath="$PROJECT_DIR$/webApp1/webApp1.iml" />

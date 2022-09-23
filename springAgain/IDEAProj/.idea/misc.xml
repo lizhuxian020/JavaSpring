@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/LZXPractiseSpring/pom.xml" />
         <option value="$PROJECT_DIR$/TestAnnotation/pom.xml" />
         <option value="$PROJECT_DIR$/SpringAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringTransaction/pom.xml" />
       </list>
     </option>
   </component>
