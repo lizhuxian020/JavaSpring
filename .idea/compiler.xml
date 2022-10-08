@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SpringTransaction" />
         <module name="webApp_spring_jbdcTemplate" />
         <module name="SpringAOP" />
         <module name="webApp_itDemo" />
@@ -17,8 +18,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpringAOP" target="1.8" />
+      <module name="SpringAOP" target="6" />
       <module name="SpringMybatis" target="17" />
+      <module name="SpringTransaction" target="8" />
       <module name="webApp2" target="1.7" />
       <module name="webApp_demo" target="1.7" />
       <module name="webApp_itDemo" target="1.7" />

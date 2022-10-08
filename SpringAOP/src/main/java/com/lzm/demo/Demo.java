@@ -6,6 +6,7 @@ import com.lzm.dao.impl.UserDaoImpl;
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 //
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -13,6 +14,9 @@ import java.lang.reflect.Proxy;
 
 public class Demo {
     public static void main(String[] args) {
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserDao bean = classPathXmlApplicationContext.getBean(UserDao.class);
+        bean.save();
 //        final UserDaoImpl dao = new UserDaoImpl();
 //        final UserAdvice advice = new UserAdvice();
 //
@@ -37,12 +41,12 @@ public class Demo {
 //        UserDaoImpl object = (UserDaoImpl)enhancer.create();
 //        object.save();
 
-        jdkProxy();
+//        jdkProxy();
     }
 
     public static void jdkProxy() {
-        UserDaoImpl dao = new UserDaoImpl();
-        UserAdvice advice = new UserAdvice();
+        final UserDaoImpl dao = new UserDaoImpl();
+        final UserAdvice advice = new UserAdvice();
 
         UserDao proxyInstance = (UserDao) Proxy.newProxyInstance(dao.getClass().getClassLoader(), dao.getClass().getInterfaces(), new InvocationHandler() {
             @Override
