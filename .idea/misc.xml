@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/SpringMybatis/pom.xml" />
         <option value="$PROJECT_DIR$/SpringAOP/pom.xml" />
         <option value="$PROJECT_DIR$/SpringTransaction/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMybatisDynamicProxy/pom.xml" />
       </list>
     </option>
   </component>
