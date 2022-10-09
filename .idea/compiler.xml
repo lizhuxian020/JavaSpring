@@ -18,7 +18,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpringAOP" target="6" />
+      <module name="SpringAOP" target="1.5" />
       <module name="SpringMybatis" target="17" />
       <module name="SpringTransaction" target="8" />
       <module name="webApp2" target="1.7" />

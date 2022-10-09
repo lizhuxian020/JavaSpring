@@ -44,19 +44,19 @@ public class Demo {
 //        jdkProxy();
     }
 
-    public static void jdkProxy() {
-        final UserDaoImpl dao = new UserDaoImpl();
-        final UserAdvice advice = new UserAdvice();
-
-        UserDao proxyInstance = (UserDao) Proxy.newProxyInstance(dao.getClass().getClassLoader(), dao.getClass().getInterfaces(), new InvocationHandler() {
-            @Override
-            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                advice.save();
-                method.invoke(dao, args);
-                return null;
-            }
-        });
-
-        proxyInstance.save();
-    }
+//    public static void jdkProxy() {
+//        final UserDaoImpl dao = new UserDaoImpl();
+//        final UserAdvice advice = new UserAdvice();
+//
+//        UserDao proxyInstance = (UserDao) Proxy.newProxyInstance(dao.getClass().getClassLoader(), dao.getClass().getInterfaces(), new InvocationHandler() {
+//            @Override
+//            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+//                advice.save();
+//                method.invoke(dao, args);
+//                return null;
+//            }
+//        });
+//
+//        proxyInstance.save();
+//    }
 }

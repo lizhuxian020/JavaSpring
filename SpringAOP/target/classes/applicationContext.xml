@@ -7,7 +7,7 @@
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
 ">
 
-    <bean id="target" class="com.lzm.dao.impl.UserDaoImpl"/>
+    <bean class="com.lzm.dao.impl.UserDaoImpl"/>
 
     <bean id="aspect" class="com.lzm.advice.UserAdvice"/>
 
@@ -15,7 +15,7 @@
         <aop:aspect ref="aspect">
             <aop:before method="save" pointcut="execution(public void com.lzm.dao.impl.UserDaoImpl.save())"/>
             <aop:after method="saveAfter" pointcut="execution(* com.lzm.dao.impl.*.*(..))"/>
-            <aop:around method="saveAround" pointcut="execution(* com.lzm.dao.impl.*.*(..))"/>
+<!--            <aop:around method="saveAround" pointcut="execution(* com.lzm.dao.impl.*.*(..))"/>-->
         </aop:aspect>
     </aop:config>
 

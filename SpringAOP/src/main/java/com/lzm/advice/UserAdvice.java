@@ -1,6 +1,6 @@
 package com.lzm.advice;
 
-import org.aspectj.lang.ProceedingJoinPoint;
+//import org.aspectj.lang.ProceedingJoinPoint;
 
 public class UserAdvice {
     public void save() {
@@ -11,9 +11,9 @@ public class UserAdvice {
         System.out.println("after running...");
     }
 
-    public void saveAround(ProceedingJoinPoint pjp) throws Throwable {
-        System.out.println("around running...1");
-        Object proceed = pjp.proceed();
-        System.out.println("around running...2");
-    }
+//    public void saveAround(ProceedingJoinPoint pjp) throws Throwable {
+//        System.out.println("around running...1");
+//        Object proceed = pjp.proceed();
+//        System.out.println("around running...2");
+//    }
 }
