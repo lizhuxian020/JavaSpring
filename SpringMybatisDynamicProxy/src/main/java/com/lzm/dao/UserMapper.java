@@ -11,4 +11,6 @@ public interface UserMapper {
     public User findByCondition(User user);
 
     public List<User> findByIds(int[] ids);
+
+    public int update(User user);
 }

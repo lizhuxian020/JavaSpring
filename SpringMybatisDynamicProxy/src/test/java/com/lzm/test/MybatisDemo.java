@@ -10,9 +10,25 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Date;
 import java.util.List;
 
 public class MybatisDemo {
+
+    @Test
+    public void test3() throws IOException {
+        InputStream resourceAsStream = Resources.getResourceAsStream("MybatisConfig.xml");
+        SqlSessionFactory build = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession sqlSession = build.openSession(true);
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = new User();
+        user.setId(1);
+        user.setBirthday(new Date());
+        System.out.println(user);
+        int update = mapper.update(user);
+        System.out.println(update);
+        sqlSession.close();;
+    }
 
     @Test
     public void test2() throws IOException {

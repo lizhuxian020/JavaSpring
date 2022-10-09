@@ -1,18 +1,13 @@
 package com.lzm.domain;
 
+import java.util.Date;
+
 public class User {
     private int id;
     private String name;
     private String phone;
     private int money;
-
-    public int getMoney() {
-        return money;
-    }
-
-    public void setMoney(int money) {
-        this.money = money;
-    }
+    private Date birthday;
 
     @Override
     public String toString() {
@@ -21,7 +16,24 @@ public class User {
                 ", name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", money=" + money +
+                ", birthday=" + birthday +
                 '}';
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
     }
 
     public int getId() {
