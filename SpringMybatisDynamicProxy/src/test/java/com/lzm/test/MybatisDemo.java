@@ -1,5 +1,6 @@
 package com.lzm.test;
 
+import com.github.pagehelper.PageHelper;
 import com.lzm.dao.UserMapper;
 import com.lzm.domain.User;
 import org.apache.ibatis.io.Resources;
@@ -14,6 +15,19 @@ import java.util.Date;
 import java.util.List;
 
 public class MybatisDemo {
+
+    @Test
+    public void test4() throws IOException {
+        InputStream resourceAsStream = Resources.getResourceAsStream("MybatisConfig.xml");
+        SqlSessionFactory build = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession sqlSession = build.openSession(true);
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+
+        int[] ids = {11};
+        List<User> byIds = mapper.findByIds(ids);
+        System.out.println(byIds);
+        sqlSession.close();;
+    }
 
     @Test
     public void test3() throws IOException {
@@ -65,7 +79,14 @@ public class MybatisDemo {
         SqlSessionFactory build = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = build.openSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+
+
+//        PageHelper.startPage(1,2);
+
         List<User> all = mapper.findAll();
+        for (User user: all) {
+            System.out.println(user);
+        }
         System.out.println(all);
         sqlSession.close();;
     }

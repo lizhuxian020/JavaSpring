@@ -3,8 +3,7 @@
 <mapper namespace="com.lzm.dao.UserMapper">
 
     <select id="findAll" resultType="user">
-        select *
-        from user
+        select * from user
     </select>
 
     <select id="findByCondition" resultType="user" parameterType="user">
