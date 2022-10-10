@@ -22,10 +22,11 @@ public class MybatisDemo {
         SqlSession sqlSession = build.openSession(true);
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = new User();
-        user.setId(1);
+//        user.setId(1);
+        user.setName("lzm");
         user.setBirthday(new Date());
         System.out.println(user);
-        int update = mapper.update(user);
+        int update = mapper.insert(user);
         System.out.println(update);
         sqlSession.close();;
     }

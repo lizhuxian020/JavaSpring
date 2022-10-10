@@ -13,4 +13,6 @@ public interface UserMapper {
     public List<User> findByIds(int[] ids);
 
     public int update(User user);
+
+    public int insert(User user);
 }

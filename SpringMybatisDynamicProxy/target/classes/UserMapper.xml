@@ -29,19 +29,23 @@
     </select>
 
     <update id="update" parameterType="user">
-        update user
-        <set>
-            <if test="name!=null">
-                name='${name}'
-            </if>
-            <if test="birthday=!null">
-                birthday=${birthday}
-            </if>
-        </set>
-        <where>
-            <if test="id!=0">
-                id=${id}
-            </if>
-        </where>
+        update user set birthday=${birthday} where id=${id}
+<!--        <set>-->
+<!--            <if test="name!=null">-->
+<!--                name='${name}'-->
+<!--            </if>-->
+<!--            <if test="birthday=!null">-->
+<!--                birthday=${birthday}-->
+<!--            </if>-->
+<!--        </set>-->
+<!--        <where>-->
+<!--            <if test="id!=0">-->
+<!--                id=${id}-->
+<!--            </if>-->
+<!--        </where>-->
     </update>
+
+    <insert id="insert" parameterType="user">
+        insert into user(name, birthday) values (#{name}, #{birthday})
+    </insert>
 </mapper>
