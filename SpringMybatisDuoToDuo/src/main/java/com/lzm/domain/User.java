@@ -1,6 +1,7 @@
 package com.lzm.domain;
 
 import java.util.Date;
+import java.util.List;
 
 public class User {
     private int id;
@@ -8,6 +9,16 @@ public class User {
     private String phone;
     private int money;
     private Date birthday;
+
+    private List<Order> orders;
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
+    }
 
     @Override
     public String toString() {
@@ -17,6 +28,7 @@ public class User {
                 ", phone='" + phone + '\'' +
                 ", money=" + money +
                 ", birthday=" + birthday +
+                ", orders=" + orders +
                 '}';
     }
 

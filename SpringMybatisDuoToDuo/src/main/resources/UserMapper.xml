@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzm.dao.UserMapper">
+
+
+    <resultMap id="orderMap" type="user">
+        <id column="uid" property="id"/>
+        <result column="name" property="name"/>
+        <result column="money" property="money"/>
+        <collection property="orders" ofType="order">
+            <id column="oid" property="id"/>
+            <result column="oMoney" property="money"/>
+        </collection>
+    </resultMap>
+
+    <select id="findById" parameterType="java.lang.Integer" resultMap="orderMap">
+        select *, uo.id oid, uo.money oMoney from user u, u_order uo where u.id=#{as} and u.id=uo.uid;
+    </select>
+
+</mapper>
