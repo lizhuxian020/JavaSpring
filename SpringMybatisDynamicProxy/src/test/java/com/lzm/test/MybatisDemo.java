@@ -1,6 +1,7 @@
 package com.lzm.test;
 
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.lzm.dao.UserMapper;
 import com.lzm.domain.User;
 import org.apache.ibatis.io.Resources;
@@ -81,13 +82,22 @@ public class MybatisDemo {
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
 
-//        PageHelper.startPage(1,2);
+        PageHelper.startPage(1,2);
 
         List<User> all = mapper.findAll();
         for (User user: all) {
             System.out.println(user);
         }
         System.out.println(all);
+
+        PageInfo pageInfo = new PageInfo(all);
+        System.out.println("getFirstPage" + pageInfo.getFirstPage());
+        System.out.println("getPageNum" + pageInfo.getPageNum());
+        System.out.println("getPageSize" + pageInfo.getPageSize());
+        System.out.println("getNextPage" + pageInfo.getNextPage());
+        System.out.println("getTotal" + pageInfo.getTotal());
+        System.out.println();
+        System.out.println();
         sqlSession.close();;
     }
 }

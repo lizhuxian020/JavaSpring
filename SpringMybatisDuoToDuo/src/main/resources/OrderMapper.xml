@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzm.dao.OrderMapper">
+
+    <resultMap id="orderMap" type="order">
+        <id column="oid" property="id"/>
+        <result column="money" property="money"/>
+        <result column="uid" property="user.id"/>
+        <result column="name" property="user.name"/>
+        <result column="uMoney" property="user.money"/>
+        <result column="birthday" property="user.birthday"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="orderMap">
+        SELECT *, uo.id oid, u.money uMoney FROM u_order uo,user u WHERE uo.uid=u.id
+    </select>
+
+</mapper>

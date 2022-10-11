@@ -9,6 +9,7 @@
         <module name="SpringTransaction" />
         <module name="webApp_spring_jbdcTemplate" />
         <module name="SpringAOP" />
+        <module name="SpringMybatisDuoToDuo" />
         <module name="webApp_itDemo" />
         <module name="webApp2" />
         <module name="SpringMybatisDynamicProxy" />
@@ -21,6 +22,7 @@
     <bytecodeTargetLevel>
       <module name="SpringAOP" target="1.5" />
       <module name="SpringMybatis" target="1.5" />
+      <module name="SpringMybatisDuoToDuo" target="8" />
       <module name="SpringMybatisDynamicProxy" target="8" />
       <module name="SpringTransaction" target="8" />
       <module name="webApp2" target="1.7" />
