@@ -13,6 +13,7 @@
         <module name="webApp_itDemo" />
         <module name="webApp2" />
         <module name="SpringMybatisDynamicProxy" />
+        <module name="SpringMybatisAnno" />
         <module name="webApp_Spring_annotation" />
         <module name="webapp_spring_mvc" />
         <module name="SpringMybatis" />
@@ -22,6 +23,7 @@
     <bytecodeTargetLevel>
       <module name="SpringAOP" target="1.5" />
       <module name="SpringMybatis" target="1.5" />
+      <module name="SpringMybatisAnno" target="8" />
       <module name="SpringMybatisDuoToDuo" target="8" />
       <module name="SpringMybatisDynamicProxy" target="8" />
       <module name="SpringTransaction" target="8" />

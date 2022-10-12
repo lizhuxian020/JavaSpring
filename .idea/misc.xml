@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/SpringTransaction/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMybatisDynamicProxy/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMybatisDuoToDuo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMybatisAnno/pom.xml" />
       </list>
     </option>
   </component>
