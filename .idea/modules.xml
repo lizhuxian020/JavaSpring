@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringMybatisAnno/SpringMybatisAnno.iml" filepath="$PROJECT_DIR$/SpringMybatisAnno/SpringMybatisAnno.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMybatisDuoToDuo/SpringMybatisDuoToDuo.iml" filepath="$PROJECT_DIR$/SpringMybatisDuoToDuo/SpringMybatisDuoToDuo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMybatisDynamicProxy/SpringMybatisDynamicProxy.iml" filepath="$PROJECT_DIR$/SpringMybatisDynamicProxy/SpringMybatisDynamicProxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMybatisWebMVC/SpringMybatisWebMVC.iml" filepath="$PROJECT_DIR$/SpringMybatisWebMVC/SpringMybatisWebMVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringTransaction/SpringTransaction.iml" filepath="$PROJECT_DIR$/SpringTransaction/SpringTransaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/proj0218.iml" filepath="$PROJECT_DIR$/.idea/proj0218.iml" />
       <module fileurl="file://$PROJECT_DIR$/webApp2/webApp2.iml" filepath="$PROJECT_DIR$/webApp2/webApp2.iml" />

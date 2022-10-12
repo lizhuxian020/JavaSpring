@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/SpringMybatisWebMVC" />
     <file type="web" url="file://$PROJECT_DIR$/webApp2" />
     <file type="web" url="file://$PROJECT_DIR$/webApp_demo" />
     <file type="web" url="file://$PROJECT_DIR$/webApp_itDemo" />
@@ -24,6 +25,7 @@
         <option value="$PROJECT_DIR$/SpringMybatisDynamicProxy/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMybatisDuoToDuo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMybatisAnno/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMybatisWebMVC/pom.xml" />
       </list>
     </option>
   </component>

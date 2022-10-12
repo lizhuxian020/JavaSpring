@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpringMybatisWebMVC:war">
+    <output-path>$PROJECT_DIR$/SpringMybatisWebMVC/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SpringMybatisWebMVC</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SpringMybatisWebMVC-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="SpringMybatisWebMVC:war exploded" />
+    </root>
+  </artifact>
+</component>

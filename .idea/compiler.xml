@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringTransaction" />
         <module name="webApp_spring_jbdcTemplate" />
-        <module name="SpringAOP" />
-        <module name="SpringMybatisDuoToDuo" />
         <module name="webApp_itDemo" />
         <module name="webApp2" />
+        <module name="SpringMybatisWebMVC" />
         <module name="SpringMybatisDynamicProxy" />
+        <module name="SpringTransaction" />
+        <module name="SpringAOP" />
+        <module name="SpringMybatisDuoToDuo" />
         <module name="SpringMybatisAnno" />
         <module name="webApp_Spring_annotation" />
         <module name="webapp_spring_mvc" />
@@ -26,6 +27,8 @@
       <module name="SpringMybatisAnno" target="8" />
       <module name="SpringMybatisDuoToDuo" target="8" />
       <module name="SpringMybatisDynamicProxy" target="8" />
+      <module name="SpringMybatisSSM" target="8" />
+      <module name="SpringMybatisWebMVC" target="1.7" />
       <module name="SpringTransaction" target="8" />
       <module name="webApp2" target="1.7" />
       <module name="webApp_demo" target="1.7" />
