@@ -36,8 +36,15 @@ public class MybatisTest {
 //        for (User user: users) {
 //            System.out.println(user);
 //        }
-        User user = userMapper.findById(1);
-        System.out.println(user);
+//        User user = userMapper.findById(1);
+//        System.out.println(user);
+//        List<Order> orders = mapper.findByUid(1);
+//        System.out.println(orders);
+
+        List<User> allUserOrder = userMapper.findAllUserOrder();
+        for (User user: allUserOrder) {
+            System.out.println(user);
+        }
 
     }
 

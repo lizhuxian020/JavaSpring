@@ -19,4 +19,10 @@ public interface OrderMapper {
             )
     })
     public List<Order> findAll();
+
+    @Select("select * from u_order where id=#{id}")
+    public Order findById(int i);
+
+    @Select("select * from u_order where uid=#{uid}")
+    public List<Order> findByUid(int uid);
 }
