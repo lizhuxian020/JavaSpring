@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public interface UserMapper extends BaseMapper<User> {
-
-    @Select("select * from tb_user")
-    public List<User> findAll();
+//
+//    @Select("select * from tb_user")
+//    public List<User> findAll();
 }
