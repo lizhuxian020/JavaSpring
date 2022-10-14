@@ -7,7 +7,15 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 ">
 
+
     <context:property-placeholder location="classpath:jdbc.properties"/>
+
+<!--    <bean class="com.alibaba.druid.pool.DruidDataSource" id="dataSource">-->
+<!--        <property name="driverClassName" value="${jdbc.drive}"/>-->
+<!--        <property name="url" value="${jdbc.url}"/>-->
+<!--        <property name="password" value="${jdbc.pwd}"/>-->
+<!--        <property name="username" value="${jdbc.user}"/>-->
+<!--    </bean>-->
 
     <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
         <property name="driverClass" value="${jdbc.drive}"/>
@@ -18,7 +26,7 @@
 
     <bean class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean" id="sqlSessionFactory">
         <property name="dataSource" ref="dataSource"/>
-<!--        <property name="configLocation" value="classpath:mybatisConfig.xml"/>-->
+        <property name="configLocation" value="classpath:mybatisConfig.xml"/>
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
