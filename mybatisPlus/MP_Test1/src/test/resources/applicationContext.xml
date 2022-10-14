@@ -11,7 +11,7 @@
 
     <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
         <property name="driverClass" value="${jdbc.drive}"/>
-        <property name="jdbcUrl" value="${jdbc.drive}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
         <property name="user" value="${jdbc.user}"/>
         <property name="password" value="${jdbc.pwd}"/>
     </bean>
