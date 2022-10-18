@@ -19,7 +19,12 @@
     <bean class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean" id="sqlSessionFactory">
         <property name="dataSource" ref="dataSource"/>
 <!--        <property name="configLocation" value="classpath:mybatisConfig.xml"/>-->
+<!--        <property name="configuration" >-->
+<!--            <ref bean=""-->
+<!--        </property>-->
     </bean>
+
+    <bean class="com.lzm.MybatisPlusConfig" id="mybatisPlusConfig"/>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.lzm.mapper"/>

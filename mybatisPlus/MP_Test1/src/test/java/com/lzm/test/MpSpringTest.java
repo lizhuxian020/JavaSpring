@@ -23,6 +23,15 @@ public class MpSpringTest {
     private UserMapper mapper;
 
     @Test
+    public void test5() {
+        User user = new User();
+        user.setId(2);
+
+        User user1 = user.selectById();
+        System.out.println(user1);
+    }
+
+    @Test
     public void test4() {
 
         Page<User> userPage = new Page<User>(1, 2);
